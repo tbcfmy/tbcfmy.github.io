@@ -1,0 +1,138 @@
+/* 设置内容区样式 */
+#container {
+    width:100%;
+    /* 继承父类width的100% */
+    height:500px ;
+    background-color: rgba(255, 255, 255, 0.4); /* 纯白色 */
+}
+
+/* 冻结布局 */
+#cont-inner {
+    width: 1000px;
+    margin:0 auto;
+}
+
+/* 设置内容区左边样式 */
+#article {
+    position: absolute;
+    width: 210px;
+    height: 440px;
+    margin: 50px 10px 50px 130px;
+    background-color: rgba(181, 175, 175, 0.5);
+}
+
+/* 设置左内容区图片样式 */
+#img {
+    opacity: 1;
+    width: 80px;
+    height: auto; 
+    margin: 30px 65px 10px 65px;
+    background-color: white;
+}
+
+
+/* 设置左内容区标题样式 */
+h1 {
+    font-family: "SimSun", "宋体", Arial, sans-serif; 
+    font-size: 20px; /* 字体大小10像素 */
+    color: #000000; /* 黑色 */
+    font-weight: bold; /* 加粗 */
+    text-align: center;
+}
+
+#article .key {
+    font-family: "SimSun", "宋体", Arial, sans-serif; 
+    font-size: 10px; /* 字体大小10像素 */
+    color: #000000; /* 黑色 */
+    font-weight: bold; /* 加粗 */
+    margin: 5px 5px 5px 8px;
+    text-align: center;
+}
+
+#article .value {
+    font-family: "SimSun", "楷体", Arial, sans-serif; 
+    font-size: 10px; /* 字体大小10像素 */
+    color: #1b1515; 
+    font-weight: bold; /* 加粗 */
+    margin: 5px 8px 5px 5px;
+    text-align: center;
+}
+
+/* 设置右内容区样式 */
+
+#cont-right-top {
+    margin: 65px 2px 2px 2px;
+    padding: 2px;
+    float: right;
+    width: 700px;
+}
+
+#cont-right-top #cont-right {
+    float: right;
+    width: 196px;
+    height: 218px;
+    margin: 54px 10px 51px 10px;
+    background-color: rgba(181, 175, 175, 0.5);
+    
+}
+
+#cont-right-top #cont-right .right-key {
+    font-family: "SimSun", "宋体", Arial, sans-serif;
+    font-size: 5px; /* 字体大小5像素 */
+    color: #000000;
+    font-weight: bold; /* 加粗 */
+    margin: 5px 5px 5px 8px;
+    text-align: center;
+}
+
+#cont-right-top #cont-right .dashed-line {
+    /* 设置宽度 */
+    width: 80%; 
+    margin: 0 auto;
+    /* 设置高度，这里是线条的粗细 */
+    height: 1px;
+    /* 使用CSS的线性渐变来创建虚线效果 */
+    background-image: linear-gradient(to right, #333 50%, transparent 0%);
+    /* 设置背景大小以控制虚线的间隔和长度 */
+    background-size: 4px 1px; /* 第一个值控制虚线与虚线之间的空格，第二个值控制线的高度 */
+    /* 重复背景图像以形成连续的虚线 */
+    background-repeat: repeat-x;
+}
+
+#cont-right-top #cont-right #cont-right-1 {
+    margin: 30px 5px 5px 5px;
+    padding: 2px;
+}
+
+
+
+#cont-right-bottom {
+    margin: -21px 14px 4px 0px;
+    padding: 2px;
+    width: 623px;
+    height: 113px;
+    float: right;
+    background-color: rgba(181, 175, 175, 0.5);
+}
+
+#cont-right-bottom h2 {
+    font-family: "SimSun", "宋体", Arial, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    height: 5px;
+    margin: 13px 3px 3px 3px;
+    width: 100px;
+    height: 30px;
+}
+
+p {
+    font-family: "SimSun", "楷体", Arial, sans-serif;
+    font-size: 10px; /* 字体大小10像素 */
+    color: #1b1515; /* 黑色 */
+    font-weight: bold; /* 加粗 */
+    margin: 5px 8px 5px 23px;
+    text-align: left;
+}
+

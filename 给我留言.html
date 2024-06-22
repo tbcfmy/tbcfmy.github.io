@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给我留言</title>
+    <link rel="stylesheet" href="./css/给我留言.css">
+    <link rel="stylesheet" href="./css/consistency.css">
+</head>
+<body>
+    <header id="header">
+        Welcome to My Personal Homepage
+    </header>
+
+    <nav id="nav">
+        <a href="./index.html">主页</a>
+        <a href="./兴趣爱好.html">兴趣爱好</a>
+        <a href="./相册展示.html">相册展示</a>
+        <a href="./给我留言.html">给我留言</a>
+    </nav>
+
+    <div id="container">
+        <div id="cont-inner">
+            <div class="containerforms">
+                <h1>欢迎留言</h1>
+            <form action="/submit_message" method="post">
+                <label for="name">您的姓名:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">您的邮箱:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="subject">留言标题:</label>
+                <input type="text" id="subject" name="subject" required>
+        
+                <label for="message">留言内容:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            
+                <input type="submit" value="提交留言">
+            </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer">DESIGH BY 信管2201班樊梦怡</footer>
+</body>
+</html>

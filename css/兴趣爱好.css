@@ -1,0 +1,73 @@
+#container {
+    width:100%;
+    /* 继承父类width的100% */
+    height:500px ;
+    background-color: rgba(255, 255, 255, 0.4); /* 纯白色 */
+}
+
+#cont-inner {
+    width: 1000px;
+    margin:0 auto;
+}
+
+
+table {
+    margin: auto;
+    border: thin  black;
+    caption-side: bottom;
+    width: 800px;
+    height: 450px;
+}
+
+/* 设置单元格边框 */
+td,th {
+    border: #dcd1ce thin;
+    border-style: outset;
+    padding: 8px;
+    width: 400px; /* 单元格宽度 */
+    height: 180px; /* 单元格高度 */
+    text-align: center; /* 文本居中 */
+    vertical-align: middle; /* 文字垂直居中 */
+}
+
+table #hobby {
+    height: 190px;
+    display: table-cell;
+    background-color: #c7c2bfa1;
+    width: 30%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+table h3 {
+    font-family: "SimSun", "宋体", Arial, sans-serif;
+    font-size: 20px;
+    color: #ca6060;
+    font-weight: bold;
+    width: 185px;
+}
+
+table p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    color: #000000;
+    text-align: left;
+    width: 185px;
+}
+
+
+table #hobby img {
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 20px 10px 10px 10px;
+}
+
+table #hobby #hobby-info {
+    float:left;
+    width: 130px;
+    height: 80px;
+}
+
+
+

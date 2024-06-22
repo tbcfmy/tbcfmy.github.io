@@ -1,0 +1,69 @@
+/* 设置内容区样式 */
+#container {
+    width:100%;
+    /* 继承父类width的100% */
+    height:660px ;
+    background-color: rgba(255, 255, 255, 0.4); /* 纯白色 */
+}
+
+/* 冻结布局 */
+#cont-inner {
+    width: 1000px;
+    margin:0 auto;
+}
+
+#container #photos {
+    margin: 2px;
+    padding: 2px;
+    background-color: rgba(181, 175, 175, 0.5);
+}
+
+#container #photos h3 {
+    font-family: "方正楷书", "FangSong", "SimKai", serif;
+    font-weight: bold; /* 加粗 */
+    font-style: italic; /* 斜体 */
+    font-size: 16px;
+    margin: 6px;
+    color: #854848;
+}
+
+#container #photos .dashed-line {
+    width: 95%; 
+    margin: 10px;
+    /* 设置高度，这里是线条的粗细 */
+    height: 1px;
+    /* 使用CSS的线性渐变来创建虚线效果 */
+    background-image: linear-gradient(to right, #333 50%, transparent 0%);
+    /* 设置背景大小以控制虚线的间隔和长度 */
+    background-size: 4px 1px; /* 第一个值控制虚线与虚线之间的空格，第二个值控制线的高度 */
+    /* 重复背景图像以形成连续的虚线 */
+    background-repeat: repeat-x;
+}
+
+#container #photos .image-container {
+    display: inline-block;
+    width: 200px;/* 指定图片容器的宽度 */
+    height: 150px;/* 指定图片容器的高度 */
+    overflow: hidden;/* 防止图片超出容器大小 */
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);/* 添加阴影效果 */
+    border: 5px solid;/* 设置外边框宽度 */
+    border-image-source: linear-gradient(to right, #fce8eb, lightpink);
+    border-image-slice: 1;
+}
+
+#container #photos #imagine {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 10px;
+    /* 图片间隔10px */
+}
+
+#container #photos img {
+    width: 100%; /* 图片宽度100%，确保适应容器 */
+    height: 100%; /* 图片高度100%，确保适应容器 */
+    object-fit: cover; /* 保持图片的宽高比并填充容器 */
+}
+
